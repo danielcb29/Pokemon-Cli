@@ -9,7 +9,7 @@ export class PokemonService {
 	/**
 	* Pokemon co enpoint to request pokemones
 	**/
-	baseUrl: string = "http://pokeapi.co/api/v2/pokemon/";
+	baseUrl: string = "https://pokeapi.co/api/v2/pokemon/";
 
 
 	/**
