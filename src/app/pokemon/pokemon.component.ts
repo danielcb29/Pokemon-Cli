@@ -10,7 +10,7 @@ import { PokemonService } from './pokemon.service';
 export class PokemonComponent implements OnInit {
 
 	pokemonList: Object[] = [];
-
+	title: string = "Pokemons!";
 
 	constructor(
 		private pokemonService: PokemonService,
@@ -19,10 +19,12 @@ export class PokemonComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		/*this.pokemonService.getPokemons().subscribe(response => {
+		this.pokemonService.getPokemons().subscribe(response => {
 			this.pokemonList = response;
-			console.log(this.pokemonList);
-		});*/
+		});
 	}
 
+	getPokemonUrl(id:string){
+		return this.pokemonService.getPokemonImg(id);
+	}
 }

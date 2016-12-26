@@ -7,9 +7,6 @@
 .section-title{
 	z-index: 50;
 }
-a{
-	color: #2196f3;
-}
-a:hover{
+.sidebar-social-list>li a:hover{
 	color: #2196f3;
 }

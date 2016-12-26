@@ -1,3 +1,20 @@
-<p>
-  pokemon works!
-</p>
+<div id="content" class="content">
+	<div class="container">
+		<h1>{{title}}</h1> <hr/>
+		<div class="post-list post-grid">
+		    <div class="post-li col-md-4" *ngFor="let pokemon of pokemonList; let i = index">
+		        <div class="post-content text-center">	
+                	<img src="{{getPokemonUrl(i + 1)}}" alt="Pokemon" />
+		            <div class="post-info">
+		                <h4 class="post-title">
+		                    <a>{{pokemon.name | capitalize}}</a>
+		                </h4> 
+		                <div class="post-by">
+		                    <i class="fa fa-link"></i> {{pokemon.url}}
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>

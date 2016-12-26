@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { PokemonService } from './pokemon/pokemon.service';
 
+import {CapitalizePipe} from "./pipes/capitalize.pipe";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PokemonService } from './pokemon/pokemon.service';
     FooterComponent,
     AboutMeComponent,
     PokemonComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

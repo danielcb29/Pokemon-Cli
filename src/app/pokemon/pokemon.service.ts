@@ -1,3 +1,4 @@
+import 'rxjs/Rx';
 import { Injectable } from "@angular/core";
 import { Http } from "@angular/http";
 import { Observable } from 'rxjs';
@@ -14,7 +15,8 @@ export class PokemonService {
 	/**
 	* Url to request pokemon img
 	**/
-	imgUrl: string = "http://pokeapi.co/media/sprites/pokemon/";
+	//imgUrl: string = "http://pokeapi.co/media/sprites/pokemon/";
+	imgUrl: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
 	constructor(private http: Http){}
 
