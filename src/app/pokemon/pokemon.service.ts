@@ -15,7 +15,6 @@ export class PokemonService {
 	/**
 	* Url to request pokemon img
 	**/
-	//imgUrl: string = "http://pokeapi.co/media/sprites/pokemon/";
 	imgUrl: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
 	constructor(private http: Http){}
@@ -31,9 +30,10 @@ export class PokemonService {
 	}
 
 	/**
-	* Get img url of pokemon id
-	* @return string with img url
-	**/
+	* Get the url to load pokemon image
+	* @param id: Id of pokemon
+	* @return String with the format url
+	*/
 	getPokemonImg(id:string): string{
 		return `${this.imgUrl}${id}.png`;
 	}

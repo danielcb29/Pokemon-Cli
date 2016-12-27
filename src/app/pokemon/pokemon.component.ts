@@ -9,8 +9,14 @@ import { PokemonService } from './pokemon.service';
 })
 export class PokemonComponent implements OnInit {
 
+	/**
+	* List of pokemons, initializated empty
+	*/
 	pokemonList: Object[] = [];
-	title: string = "Pokemons!";
+	/**
+	* Title of component 
+	*/
+	title: string = "Pokémons!";
 
 	constructor(
 		private pokemonService: PokemonService,
@@ -18,13 +24,22 @@ export class PokemonComponent implements OnInit {
   		private route: ActivatedRoute,
 	) { }
 
+	/**
+	* Run at the component initialization
+	*/
 	ngOnInit() {
+		// Suscribe to pokemons list observable
 		this.pokemonService.getPokemons().subscribe(response => {
-			this.pokemonList = response;
+			this.pokemonList = response; // Assign response
 		});
 	}
 
-	getPokemonUrl(id:string){
+	/**
+	* Get the url to load pokemon image
+	* @param id: Id of pokemon
+	* @return String with the format url
+	*/
+	getPokemonUrl(id:string): string{
 		return this.pokemonService.getPokemonImg(id);
 	}
 }

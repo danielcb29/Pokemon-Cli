@@ -1,6 +1,42 @@
 # PokemonCli
 
+This project was developed for PSL Company Test. It request and show pokemons from pokeapi.co API. 
+
+## By 
+
+Daniel Correa Barrios 
+
+Universidad del Valle 
+
+## Deploy URL
+
+https://danielcb29.github.io/Pokemon-Cli/
+
+## Implementation
+
+This project implements 6 components: 
+* App Component: Main component
+* Header Component: Header of the web site, banner, menu , title
+* Pokemon Component: Control pokemons requests and visualization
+* Footer Component: Footer of the web site. 
+* AboutMe Component: Information about Daniel 
+* NotFound Component: Control otherwise url and 404 endpoints 
+
+1 Service: 
+*  Pokemon Service: Make pokemons requests and format image urls 
+
+1 Pipe:
+* Capitalize Pipe: Capitalize the first letter of text. Is used to capitalize pokemons name. 
+
+Routing: Control navigation in web site. 
+
+### Technologies
+
+* Angular JS 2.0
+* Bootstrap 3.3.3
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

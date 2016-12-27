@@ -7,6 +7,6 @@ export const ROUTES: Routes = [
 	{path: '', component: PokemonComponent},
 	{path: 'about-me', component: AboutMeComponent},
 	{path: '404', component: NotFoundComponent},
-	{path: '**', redirectTo: '404'},
+	{path: '**', redirectTo: '404'}, // Otherwise
 
 ];
